@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-origem {
+    color: green;
+    padding-top: 8%;
+}
+
+.select-origem, .select-destino {
+    width: 30%;
+    margin: 15px auto;
+}
+
+input {
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+}
+
+.calc, .button-reset {
+    margin-top: 8%;
+    font-size: 150%;
+    padding: 0.75rem 1.75rem;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+.calc:hover, .button-reset:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.card {
+    background-color: rgb(237, 238, 240);
+    position: relative;
+    text-align: center;
+    max-width: 25vw;
+    min-height: 85vh;
+    margin: 4% auto;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        min-width: 90vw;
+    }
+}
+
+.results {
+    display: grid;
+    grid-template-areas: "faleMais"
+                         "semFaleMais";
+    margin-top: 2rem;
+}
+
+.comFaleMais {
+    grid-area: "faleMais";
+    background-color: rgb(163, 235, 155);
+    width: 50%;
+    margin: 15px auto;
+    border-radius: 15px;
+}
+
+.semFaleMais {
+    grid-area: "semFaleMais";
+    background-color: rgba(255, 61, 61, .7);
+    width: 50%;
+    margin: 15px auto;
+    color: #FFF;
+    border-radius: 15px;
+}
+
+
+
+
